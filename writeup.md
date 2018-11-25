@@ -1,7 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-**Finding Lane Lines on the Road**
-
 The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
@@ -26,18 +24,14 @@ The goals / steps of this project are the following:
 
 The pipeline is simple to build and most of the time in the project is spent to tune the parameters and suit the model for the given data. 
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
-
 
 ### 2. Potential shortcomings with current pipeline
 1. The tuning is done by averaging out lane lines from several images and average may not be the best method always.
-2. In darkness during night time, it may be difficult to extract lane lines as above with the same accuracy.
-3. We fitted straight lines to find lane lines but in reality, lane lines can be curvy in nature near turns. The model may not consider such scenarios.
+2. In darkness or low light, it may be difficult to extract lane lines as above with the same accuracy.
+3. Straight lines are fit to find lane lines but in reality, lane lines can be curvy in nature near turns. The model may not consider such scenarios.
 
 
 ### 3. Possible improvements to pipeline in future
-1. There can be better ways of obtaining generic lane lines such as weighted average. We can use a cost function to determine the best method.
+1. There can be better ways of obtaining generic lane lines with methods such as weighted average. We can use a cost function to determine the best method.
 2. We may require better image processing techniques to handle scenarios such as low light or darkness.
 2. We could use quadratic and higher order curves to find lane lines near turns.
